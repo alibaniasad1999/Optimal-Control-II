@@ -1,0 +1,29 @@
+\subsection{part d}
+
+$$
+R[x(t), \tau] = A[x(t)x(t+\tau)] = \lim_{T\to\infty}\dfrac{1}{2T}\int_{-T}^T x(t)x(t+\tau)dt =\dfrac{1}{2\pi}\int_{0}^{2\pi} A^2\cos(\omega t + \phi) \cos(\omega (t + \tau) + \phi)dt
+$$
+
+$$
+\int \cos(\omega t + \phi) \cos(\omega (t + \tau) + \phi)dt = 
+\left\lbrace \begin{array}{cl}
+    A^2 \,t\,{\cos \left(\phi \right)}^2  & \;\textrm{if}\;\;\omega =0\\[1em]
+    \dfrac{A^2 \,t\,\cos \left(\omega \,\tau \right)}{2}+\dfrac{A^2 \,\sin \left(2\,\phi +2\,\omega \,t+\omega \,\tau \right)}{4\,\omega } & \;\textrm{if}\;\;\omega \not= 0
+    \end{array}\right.
+$$
+
+$$
+\int_{0}^{2\pi} \cos(\omega t + \phi) \cos(\omega (t + \tau) + \phi)dt = \left\lbrace \begin{array}{cl}
+    2\,\pi \,A^2 \,{\cos \left(\phi \right)}^2  & \;\textrm{if}\;\;\omega =0\\[1em]
+    \dfrac{A^2 \,{\left(\sin \left(2\,\phi +4\,\pi \,\omega +\omega \,\tau \right)-\sin \left(2\,\phi +\omega \,\tau \right)\right)}}{4\,\omega }+\pi \,A^2 \,\cos \left(\omega \,\tau \right) & \;\textrm{if}\;\;\omega \not= 0
+    \end{array}\right.
+$$
+
+$$
+R[x(t), \tau]
+=
+\left\lbrace \begin{array}{cl}
+    1\,A^2 \,{\cos \left(\phi \right)}^2  & \;\textrm{if}\;\;\omega =0\\[1em]
+    0.5\,A^2 \,\cos \left(\omega \,\tau \right)-\dfrac{0.04\,A^2 \,{\left(1\,\sin \left(2\,\phi +\omega \,\tau \right)-\sin \left(12.5\,\omega +2\,\phi +\omega \,\tau \right)\right)}}{\omega } & \;\textrm{if}\;\;\omega \not= 0
+    \end{array}\right.
+$$
