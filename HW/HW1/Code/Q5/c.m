@@ -8,4 +8,7 @@ load('sim_data.mat');
 time_index = find(time == 30);
 data = saved_data(time_index, 1, :);
 histogram(data)
+set(gca, 'FontSize', 16, 'FontName', 'Times New Roman');
 print -depsc ../../Figure/Q5/part_c/histogram
+fprintf("mean: %.4f\n ", mean(data));
+fprintf("variance: %.4f\n ", var(data));
