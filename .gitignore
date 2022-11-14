@@ -18,7 +18,7 @@
 *.cb
 *.cb2
 .*.lb
-
+sim_data_extra.mat
 ## Intermediate documents:
 *.dvi
 *.xdv
