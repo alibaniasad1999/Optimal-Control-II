@@ -1,0 +1,59 @@
+\section{Question 6}
+$$
+\begin{bmatrix}
+    \Delta \dot x_1 \\
+    \Delta \dot x_2 \\
+    \Delta \dot x_3 \\
+    \Delta \dot x_4
+\end{bmatrix} = \begin{bmatrix}
+    0 & 0 & 1 & 0 \\
+    0 & 0 & 0 & 1 \\
+    3n^2 & 0 & 0 & 2nr_n \\
+    0 & 0 & -\dfrac{2n}{r_n} & 0
+\end{bmatrix} \begin{bmatrix}
+    \Delta x_1 \\
+    \Delta x_2 \\
+    \Delta x_3 \\
+    \Delta x_4
+\end{bmatrix} + \begin{bmatrix}
+    0 & 0\\
+    0 & 0\\
+    1 & 0\\
+    0 & -\dfrac{1}{r_n}
+\end{bmatrix} \begin{bmatrix}
+    w_r\\
+    w_{\theta}
+\end{bmatrix}
+$$
+
+$$
+\begin{bmatrix}
+     x_1 \\
+     x_2 \\
+     x_3 \\
+     x_4
+\end{bmatrix} = \begin{bmatrix}
+    r \\
+    \theta \\
+    \dot r \\
+    \dot \theta
+\end{bmatrix}
+$$
+
+\subsection{part a}
+
+$$
+C = \begin{bmatrix}
+    1 & 0 & 0 & 0
+\end{bmatrix}
+$$
+
+$$
+\text{rank}\left(\begin{bmatrix}
+    C \\
+    CA \\
+    CA^2 \\
+    CA^3
+\end{bmatrix}\right) = 3
+$$
+System is not observable.
