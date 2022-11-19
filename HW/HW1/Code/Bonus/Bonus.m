@@ -6,7 +6,7 @@ in_circule = 0;
 max_iteration = 100000;
 pi_estimation = zeros(1, max_iteration);
 i = 1;
-var_ter = 10^-10;
+var_ter = 10^-4;
 while true
     if i > max_iteration
         break
